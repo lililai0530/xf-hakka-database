@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>江西信丰（正平）客家话音节数据库</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>江西信丰（正平）客家话音节数据库</h1>
+    <p>收录单字音节335条</p>
+</header>
+
+
+<section class="search-box">
+
+    <label>
+        声母：
+        <select id="initialSelect">
+            <option value="">全部</option>
+        </select>
+    </label>
+
+
+    <label>
+        韵母：
+        <select id="finalSelect">
+            <option value="">全部</option>
+        </select>
+    </label>
+
+
+    <label>
+        声调：
+        <select id="toneSelect">
+            <option value="">全部</option>
+        </select>
+    </label>
+
+
+    <label>
+    汉字搜索：
+    <input id="charSearch" type="text" placeholder="输入例字">
+</label>
+
+
+</section>
+
+
+
+<section>
+
+<table>
+
+<thead>
+<tr>
+<th>编号</th>
+<th>声母</th>
+<th>韵母</th>
+<th>声调</th>
+<th>例字</th>
+<th>注释</th>
+<th>音频</th>
+</tr>
+</thead>
+
+
+<tbody id="tableBody">
+
+</tbody>
+
+
+</table>
+
+</section>
+
+
+
+<div class="pagination">
+
+<button id="prevBtn">上一页</button>
+
+<span id="pageInfo"></span>
+
+<button id="nextBtn">下一页</button>
+
+</div>
+
+
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
